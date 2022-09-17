@@ -1,0 +1,44 @@
+\section{Operazioni fra insiemi}
+
+\subsection{Intersezione di insiemi}
+L'intersezione di due insiemi si scrive S $\cap$ T,
+L'insieme risultante contiene tutti e soli gli elementi che appartenevano sia ad S che a T.
+(naturalmente se S e T sono disgiunti S $\cap$ T = $\phi$). \\
+S $\cap$ T = \{x : x $\in$ S e x $\in$ T\}
+\begin{center}
+    \begin{venndiagram2sets}
+        \fillACapB
+    \end{venndiagram2sets}
+\end{center}
+Per l'operazione $\cap$ valgono le seguenti proprietà: \\
+\begin{itemize}
+    \item Idempotenza: S $\cap$ S = S
+    \item Commutatività: A $\cap$ B = B $\cap$ A
+    \item Assorbimento: A $\cap$ B = A sse A $\subseteq$ B
+    \item Associatività: (A $\cap$ B) $\cap$ C = A $\cap$ (B $\cap$ C)
+\end{itemize}
+Si noti inoltre che \framebox{A $\cap$ $\phi$ = $\phi$ $\forall$A}
+
+\subsection{Unione di insiemi}
+L'unione di due insiemi si scrive S $\cup$ T,
+l'insieme risultante contiene tutti gli elementi di S e tutti quelli di T. \\
+Definiamo S $\cup$ T = \{x : x $\in$ S oppure x $\in$ T\} \\
+\begin{center}
+    \begin{venndiagram2sets}
+        \fillA \fillB
+    \end{venndiagram2sets}
+\end{center}
+L'insieme unione come si può vedere è il più piccolo insieme che contiene sia A che B. \\
+Per l'operazione $\cup$ valgono le seguenti proprietà: \\
+\begin{itemize}
+    \item Idempotenza: S $\cup$ S = S
+    \item Commutatività: A $\cup$ B = B $\cup$ A
+    \item Assorbimento: A $\cup$ B = A sse B $\subseteq$ A
+    \item Associatività: (A $\cup$ B) $\cup$ C = A $\cup$ (B $\cup$ C)
+\end{itemize}
+Si noti inoltre che $\phi$ è l'elemento neutro \framebox{A $\cup$ $\phi$ = A} \\
+Inoltre $\cup$ e $\cap$ sono legate da delle proprietà distibutive
+\begin{itemize}
+    \item A $\cup$ (B $\cap$ C) = (A $\cup$ B) $\cap$ (A $\cup$ C)
+    \item A $\cap$ (B $\cup$ C) = (A $\cap$ B) $\cup$ (A $\cap$ C)
+\end{itemize}

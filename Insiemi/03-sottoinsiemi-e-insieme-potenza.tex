@@ -24,14 +24,20 @@ La situazione può essere rappresentata tramite diagrammi di Venn:
         \end{scope}
     \end{tikzpicture}
 \end{center}
-Per dire che un sottoinsieme B è contenuto o uguale ad A si può scrivere
+Per dire che un sottoinsieme B è contenuto o uguale ad A si può scrivere:
 \begin{center}
     B $\subseteq$ A
 \end{center}
-Mentre per dire che B non è sottoinsieme di A possiamo scrivere
+\framebox{$\phi$ $\subseteq$ A $\forall$A} $\forall$ significa "per ogni" \\
+Mentre per dire che B non è sottoinsieme di A possiamo scrivere:
 \begin{center}
     $B \not \subset A$ o anche B $\not \subseteq$ A
 \end{center}
+Possiamo dire che per $\subseteq$ valgono le seguenti proprietà:
+\begin{itemize}
+    \item Riflessività: S $\subseteq$ S $\forall$S
+    \item Transitività: se A $\subseteq$ B e B $\subseteq$ C allora A $\subseteq$ C
+\end{itemize}
 Se dati due insiemi C e D succede che C $\subseteq$ D e D $\subseteq$ C
 allora C è un \textbf{sottinsieme improprio} di D. (C = D).\\
 Ogni insieme (tranne l'insieme vuoto come vedremo a breve) accetta 2 sottoinsiemi impropri:
@@ -56,3 +62,8 @@ o \textbf{insieme delle parti} di A si indica con $\wp$(A) ed è l'insieme a cui
     \wp\phi &= \{\phi\}
 \end{align*}
 Se S è composto da n elementi (con n $\geq$ 0) il numero di elementi in $\wp$(S) è $2^n$.
+Sapendo anche che la \textbf{cardinalità} di un insieme indica il numero di elementi di esso e si scrive:
+\begin{center}
+    A = \{1, 2, 3\} $|A|$ = 3
+\end{center}
+Allora potremmo anche dire che $\wp$(S) è $2^{|S|}$
