@@ -1,0 +1,58 @@
+\section{Sottoinsiemi e insieme potenza}
+
+\subsection{Sottoinsiemi di un insieme}
+Consideriamo due insiemi:
+\begin{align*}
+    &A = \{1, 2, 3, 4\} \\
+    &B = \{1, 2, 3\}
+\end{align*}
+Osserviamo che ogni elemento di B è anche elemento di A. In questo caso si dice che B è un sottoinsieme di A e si indica con la notazione
+\begin{center}
+    B $\subset$ A
+\end{center}
+La situazione può essere rappresentata tramite diagrammi di Venn:
+\begin{center}
+    \begin{tikzpicture}
+
+        \begin{scope}[mytext/.style={text opacity=1,font=\large\bfseries}]
+
+            \draw[draw = black] (0,0) circle (2);
+            \draw[draw = black,name path=circle 2] (0,0) circle (1);
+
+            \node[mytext] at (0,1.5) (A) {A};
+            \node[mytext] at (0,0) (B) {B};
+        \end{scope}
+    \end{tikzpicture}
+\end{center}
+Per dire che un sottoinsieme B è contenuto o uguale ad A si può scrivere
+\begin{center}
+    B $\subseteq$ A
+\end{center}
+Mentre per dire che B non è sottoinsieme di A possiamo scrivere
+\begin{center}
+    $B \not \subset A$ o anche B $\not \subseteq$ A
+\end{center}
+Se dati due insiemi C e D succede che C $\subseteq$ D e D $\subseteq$ C
+allora C è un \textbf{sottinsieme improprio} di D. (C = D).\\
+Ogni insieme (tranne l'insieme vuoto come vedremo a breve) accetta 2 sottoinsiemi impropri:
+\begin{itemize}
+    \item L'insieme stesso
+    \item L'insieme vuoto
+\end{itemize}
+Se S $\subseteq$ T e S $\neq$ T allora diciamo che S è un \textbf{sottoinsieme proprio} di T
+e che T è un \textbf{soprainsieme proprio} di S. \\
+Repetita iuvant, scriviamo quello detto sopra in definizioni intensionali \\
+S $\subset$ T = \{x : se x $\in$ S allora x $\in$ T con S $\neq$ T\} \\
+(S = T) = \{x : x $\in$ S sse x $\in$ T\} \\
+S $\subseteq$ T = \{x : S $\subset$ T oppure S = T\} \\
+
+\subsection{Insieme potenza}
+Un sottoinsieme di un insieme può essere chiamato \textit{parte}, l'insieme potenza
+o \textbf{insieme delle parti} di A si indica con $\wp$(A) ed è l'insieme a cui appartengono tutti e soli i sottoinsiemi di A. \\
+\begin{align*}
+    \wp(S) &= \{X : X \subseteq S\} \\
+    A &= \{1, 2\} \\
+    \wp(A) &= \{\phi, \{1\}, \{2\}, \{1, 2\}\} \\
+    \wp\phi &= \{\phi\}
+\end{align*}
+Se S è composto da n elementi (con n $\geq$ 0) il numero di elementi in $\wp$(S) è $2^n$.

@@ -3,6 +3,8 @@
 \usepackage{venndiagram}
 \usepackage{graphicx}
 \usepackage{amsfonts}
+\usepackage{tikz}
+\usetikzlibrary{intersections}
 
 \pagestyle{plain}
 
@@ -17,14 +19,12 @@
 
 \chapter*{Introduzione}
 
-Questi appunti sono volti a guidare a 360 gradi,
-spiegando tutti i concetti passo passo ed i loro utilizzi pratici nel campo dell'informatica. \\
 Perchè studiare insiemi? la teoria degli insiemi è un fondamento della matematica,
 che a sua volta è un fondamento dell'informatica. \\
 Concretamente parlando il campo dell'informatica più influenzato dall'insiemistica
 a mio avviso è quello delle \textbf{basi di dati}. \\
 Ad esempio con una SELECT * FROM che coinvolge più di una tabella verrà fatto il \textbf{prodotto cartesiano} tra le tuple delle tabelle del database. \\
-Sempre nei database relazionali sono essenziali le operazioni di \textbf{unione}, \textbf{intersezione}, di \textbf{differenza} e così via.
+Sempre nei database relazionali sono essenziali le operazioni di \textbf{unione}, \textbf{intersezione} (inner JOIN), di \textbf{differenza} e così via.
 
 \input Insiemi/main.tex
 
